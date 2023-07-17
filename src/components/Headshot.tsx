@@ -17,10 +17,10 @@ export default function () {
       <AboutHolder>
         <AboutTitle>About Me</AboutTitle>
         <AboutText>
-          I am a software engineer with a passion for creating and learning. I
-          have experience with full-stack web development, mobile development,
-          and game development. I am currently working as a software engineer at
-          a startup called
+          Hi, I'm Craig Alan Carroll! I'm a composer with a passion for writing
+          music ranging from emotive piano to banging drum and bass. I love to
+          deep dive in to genres to create authentic experiences from the sounds
+          they offer.
         </AboutText>
       </AboutHolder>
     </HeadshotHolder>
