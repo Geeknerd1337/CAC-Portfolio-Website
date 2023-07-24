@@ -12,6 +12,7 @@ export const Background = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding-top: 5vh;
+  padding-bottom: 10vh;
   flex-direction: column;
 `;
 
@@ -111,4 +112,42 @@ export const NavButton = styled(motion.button)<NavButtonProps>`
   ${(props) =>
     props.selected &&
     "transform: scale(1.1); font-weight: 600; text-decoration: underline;"}
+`;
+
+export const ContactText = styled(motion.div)`
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: ${Colors.PianoBlack};
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContactHeader = styled(motion.div)`
+  font-size: 2rem;
+  font-weight: 500;
+  color: ${Colors.PianoBlack};
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ContactHeadshot = styled(motion.img)`
+  height: 30vh;
+  border: 2px solid ${Colors.LightCharcoal};
+  box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+`;
+
+export const ContactHolder = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 5vh;
+  width: 40%;
+  gap: 40px;
 `;

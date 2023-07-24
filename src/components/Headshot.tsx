@@ -4,16 +4,16 @@ import {
   AboutText,
   AboutHolder,
   AboutTitle,
-} from '@/styles/HeadshotStyles';
+} from "@/styles/HeadshotStyles";
 
 export default function () {
   return (
     <HeadshotHolder
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 1, delay: 0.2 }}
     >
-      <Headshot src='craig_headshot.jpg' alt='headshot' />
+      <Headshot src="craig_headshot.jpg" alt="headshot" />
       <AboutHolder>
         <AboutTitle>About Me</AboutTitle>
         <AboutText>

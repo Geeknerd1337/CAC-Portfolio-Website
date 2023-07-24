@@ -11,7 +11,11 @@ interface NavBarProps {
 //Navbar component
 export default function NavBar({ setTab, tab }: NavBarProps) {
   return (
-    <NavBarHolder>
+    <NavBarHolder
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.1 }}
+    >
       <NavButton onClick={() => setTab(0)} selected={tab === 0}>
         CONTACT
       </NavButton>
