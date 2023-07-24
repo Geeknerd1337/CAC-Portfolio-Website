@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { Colors } from './Colors';
-import { down } from 'styled-breakpoints';
-import { motion } from 'framer-motion';
+import styled from "@emotion/styled";
+import { Colors } from "./Colors";
+import { down } from "styled-breakpoints";
+import { motion } from "framer-motion";
 
 export const Background = styled.div`
   width: 100%;
@@ -28,7 +28,7 @@ export const TitleHolder = styled(motion.div)`
 
 export const Title = styled(motion.div)`
   color: ${Colors.PianoBlack};
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 `;
 
@@ -73,4 +73,42 @@ export const VideoHolder = styled(motion.div)`
   flex-direction: column;
   padding-bottom: 5vh;
   width: 40%;
+`;
+
+export const NavBarHolder = styled(motion.div)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 80px;
+`;
+
+//Nav bar button props
+interface NavButtonProps {
+  selected: boolean;
+}
+
+export const NavButton = styled(motion.button)<NavButtonProps>`
+  background-color: transparent;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: ${Colors.PianoBlack};
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  //Increase font size if selected
+  ${(props) =>
+    props.selected &&
+    "transform: scale(1.1); font-weight: 600; text-decoration: underline;"}
 `;
