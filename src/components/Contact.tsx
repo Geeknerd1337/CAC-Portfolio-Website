@@ -3,7 +3,7 @@ import {
   ContactHeadshot,
   ContactText,
   ContactHeader,
-} from "@/styles/MainViewStyles";
+} from '@/styles/MainViewStyles';
 
 export default function () {
   return (
@@ -12,8 +12,8 @@ export default function () {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.1 }}
-        src="headshot_alt.png"
-        alt="headshot"
+        src='headshot_alt.png'
+        alt='headshot'
       />
 
       <ContactText
