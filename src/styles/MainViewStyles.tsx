@@ -31,6 +31,11 @@ export const Title = styled(motion.div)`
   color: ${Colors.PianoBlack};
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  font-size: 3vw;
+
+  ${down("sm")} {
+    font-size: 4vh;
+  }
 `;
 
 export const TitleLinesHolder = styled(motion.div)`
@@ -74,6 +79,10 @@ export const VideoHolder = styled(motion.div)`
   flex-direction: column;
   padding-bottom: 5vh;
   width: 40%;
+
+  ${down("sm")} {
+    width: 80%;
+  }
 `;
 
 export const NavBarHolder = styled(motion.div)`
@@ -81,6 +90,10 @@ export const NavBarHolder = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${down("sm")} {
+    gap: 2vh;
+  }
 
   gap: 80px;
 `;
@@ -101,6 +114,11 @@ export const NavButton = styled(motion.button)<NavButtonProps>`
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 2rem;
+
+  ${down("sm")} {
+    font-size: 3vh;
+  }
+
   color: ${Colors.PianoBlack};
   transition: all 0.2s ease-in-out;
 
@@ -122,7 +140,9 @@ export const ContactText = styled(motion.div)`
   padding-bottom: 2vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 2vh;
+  flex-direction: column;
 `;
 
 export const ContactHeader = styled(motion.div)`
@@ -150,4 +170,9 @@ export const ContactHolder = styled(motion.div)`
   padding-bottom: 5vh;
   width: 40%;
   gap: 40px;
+
+  ${down("sm")} {
+    flex-direction: column;
+    width: 80%;
+  }
 `;

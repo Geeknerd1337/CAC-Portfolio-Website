@@ -1,7 +1,7 @@
-import styled from '@emotion/styled';
-import { Colors } from './Colors';
-import { down } from 'styled-breakpoints';
-import { motion } from 'framer-motion';
+import styled from "@emotion/styled";
+import { Colors } from "./Colors";
+import { down } from "styled-breakpoints";
+import { motion } from "framer-motion";
 
 export const WorkVideoHolder = styled(motion.div)`
   display: flex;
@@ -30,14 +30,14 @@ export const ItemDescriptionHolder = styled(motion.div)`
 `;
 
 export const WorkItemTitle = styled(motion.div)`
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 0.8rem;
   color: ${Colors.PianoBlack};
 `;
 
 export const WorkItemDescription = styled(motion.div)`
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   text-align: center;
@@ -57,4 +57,9 @@ export const WorkGrid = styled(motion.div)`
   justify-content: center;
   align-items: center;
   padding: 1vw;
+
+  ${down("sm")} {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 `;
