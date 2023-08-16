@@ -17,7 +17,7 @@
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "framer-motion": "^10.6.1",
-    "next": "13.4.10",
+    "next": "^13.4.16",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-breakpoints": "^11.2.3",

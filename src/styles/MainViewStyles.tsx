@@ -1,7 +1,7 @@
-import styled from "@emotion/styled";
-import { Colors } from "./Colors";
-import { down } from "styled-breakpoints";
-import { motion } from "framer-motion";
+import styled from '@emotion/styled';
+import { Colors } from './Colors';
+import { down } from 'styled-breakpoints';
+import { motion } from 'framer-motion';
 
 export const Background = styled.div`
   width: 100%;
@@ -27,13 +27,13 @@ export const TitleHolder = styled(motion.div)`
   z-index: 0;
 `;
 
-export const Title = styled(motion.div)`
+export const TitleText = styled(motion.div)`
   color: ${Colors.PianoBlack};
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 3vw;
 
-  ${down("sm")} {
+  ${down('sm')} {
     font-size: 4vh;
   }
 `;
@@ -80,7 +80,7 @@ export const VideoHolder = styled(motion.div)`
   padding-bottom: 5vh;
   width: 40%;
 
-  ${down("sm")} {
+  ${down('sm')} {
     width: 80%;
   }
 `;
@@ -91,7 +91,7 @@ export const NavBarHolder = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
-  ${down("sm")} {
+  ${down('sm')} {
     gap: 2vh;
   }
 
@@ -111,11 +111,11 @@ export const NavButton = styled(motion.button)<NavButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 2rem;
 
-  ${down("sm")} {
+  ${down('sm')} {
     font-size: 3vh;
   }
 
@@ -129,14 +129,14 @@ export const NavButton = styled(motion.button)<NavButtonProps>`
   //Increase font size if selected
   ${(props) =>
     props.selected &&
-    "transform: scale(1.1); font-weight: 600; text-decoration: underline;"}
+    'transform: scale(1.1); font-weight: 600; text-decoration: underline;'}
 `;
 
 export const ContactText = styled(motion.div)`
   font-size: 1.5rem;
   font-weight: 300;
   color: ${Colors.PianoBlack};
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 2vh;
   display: flex;
   justify-content: center;
@@ -149,7 +149,7 @@ export const ContactHeader = styled(motion.div)`
   font-size: 2rem;
   font-weight: 500;
   color: ${Colors.PianoBlack};
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding-bottom: 2vh;
   display: flex;
   justify-content: center;
@@ -171,7 +171,7 @@ export const ContactHolder = styled(motion.div)`
   width: 40%;
   gap: 40px;
 
-  ${down("sm")} {
+  ${down('sm')} {
     flex-direction: column;
     width: 80%;
   }
